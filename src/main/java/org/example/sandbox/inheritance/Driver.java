@@ -7,21 +7,18 @@ public class Driver {
 
     public static void main(String[] args) {
 
-        LandCraft grandCherokee = new GrandCherokee();
-        LandCraft wrangler = new Wrangler();
-
-        List<LandCraft> landcraft = new ArrayList<>();
-        landcraft.add(grandCherokee);
-        landcraft.add(wrangler);
-
-        for (LandCraft lc : landcraft) {
-            System.out.println(lc.getClass().getSimpleName());
+        List<Vehicle> vehicles = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            vehicles.add(new Car());  //anonymous instantiation
+            vehicles.add(new Truck());
         }
+//        for(Vehicle vehicle : vehicles) {
+//            vehicle.startEngine();
+//            displayVehicle(vehicle);
+//            vehicle.stopEngine();
+//            displayVehicle(vehicle);
+//        }
 
-        landcraft.forEach(System.out::println);
-
-
-
-
+        System.out.println(vehicles);
     }
 }
