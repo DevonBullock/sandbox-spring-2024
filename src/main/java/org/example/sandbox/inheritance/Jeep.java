@@ -2,7 +2,7 @@ package org.example.sandbox.inheritance;
 
 import java.awt.*;
 
-public class Jeep extends SportUtilityVehicle {
+public abstract class Jeep extends SportUtilityVehicle {
 
     private Color color;
     protected Double gasMileage;

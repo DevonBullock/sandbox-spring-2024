@@ -9,4 +9,9 @@ public class GrandCherokee extends Jeep {
         sb.append('}');
         return sb.toString();
     }
+
+    @Override
+    public void Transport() {
+
+    }
 }

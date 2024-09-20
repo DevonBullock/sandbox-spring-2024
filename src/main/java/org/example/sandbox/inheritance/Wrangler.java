@@ -1,6 +1,6 @@
 package org.example.sandbox.inheritance;
 
-public class Wrangler extends Jeep {
+public abstract class Wrangler extends Jeep {
 
     @Override
     public String toString() {

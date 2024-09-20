@@ -6,4 +6,9 @@ public class Truck extends LandCraft {
     public void transport() {
 
     }
+
+    @Override
+    public void Transport() {
+
+    }
 }
